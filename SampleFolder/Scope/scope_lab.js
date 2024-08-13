@@ -27,6 +27,22 @@ function show(){
     }
     show();
     
-    console.log(functionVar); // Throws ReferenceError
-    console.log(functionLet); // Throws ReferenceError
-    console.log(functionConst); // Throws ReferenceError
+    //console.log(functionVar); // Throws ReferenceError
+    //console.log(functionLet); // Throws ReferenceError
+    //console.log(functionConst); // Throws ReferenceError
+
+    {
+        let a=9;
+        const pi = 3.1416;
+        var x = "cat";
+
+        a=10;
+        //pi = 5;
+        x = "kitten";
+    }
+        a=11;
+        pi = 4;
+        x = "mongoose";
+    console.log(a);
+    console.log(pi);
+    console.log(x);
